@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+    <title></title>
+
+</head>
+
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly;">
+<center style="width: 100%; background-color: #f3f3f3;">
+    <div style="max-width: 600px; margin: 0 auto; padding-top: 60px; padding-bottom: 60px;" class="email-container">
+        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+               style=" margin: auto;">
+            <tr>
+
+                <td valign="top" style="background-color: #ffffff; border-bottom: 1px solid #eeeeee">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="width:100%; ">
+                        <tr style="background: #323248;">
+                            <td style="text-align: left; padding: 1.5em;">
+                                <a href="{{ base_url }}">
+                                    <img src="{{ base_url }}themes/default/img/logo_full.png" height="40px" alt="{{ site_title }}"
+                                         style="display:block; border:0; margin:0 auto; margin-left: 20px; margin-top: 20px; margin-bottom: 15px; ">
+                                </a>
+                            </td>
+                            <td style="text-align: center; padding: 1.5em;">
+                                <h1 style="font-size: 24px;  margin: 0; color: #A9A9B9; text-decoration: none">
+                                    {{ site_title }}
+                                </h1>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td valign="middle" style="background-color: #ffffff; padding: 1.5em; border-bottom: 1px solid #eeeeee">
+                    <table style="width: 100%">
+                        <tr>
+                            <td>
+                                <div style="word-break: break-all;">
+                                    <p style="display: block; font-size: 16px; text-align:left;">{{ message|raw }}</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+
+        </table>
+        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+               style="margin: auto;">
+            <tr>
+                <td valign="middle" class="bg_black footer email-section"
+                    style="padding-top: 20px; padding-left: 20px; padding-right: 20px; padding-bottom: 20px;background-color: #333333">
+                    <div style="color: #A9A9B9">{{ 'now' | date('Y') }} © {{ site_title }} | Все права защищены</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</center>
+</body>
+</html>
